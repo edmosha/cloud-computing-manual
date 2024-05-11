@@ -1,4 +1,4 @@
-import { HandbookPage } from './pages/handbook/handbook-page.tsx';
+import { HandbookPage } from '../pages/handbook';
 
 function App() {
   return (

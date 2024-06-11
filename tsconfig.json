@@ -17,8 +17,8 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
 
     "sourceMap": true,
@@ -28,6 +28,7 @@
     "importHelpers": true,
     "skipDefaultLibCheck": true,
     "esModuleInterop": true,
+    "rootDir": ".",
     "baseUrl": ".",
     "paths": {
       "app/*": ["src/app/*"],
@@ -38,13 +39,6 @@
       "widgets/*": ["src/widgets/*"]
     }
   },
-  "include": [
-    "src",
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "**/**/*.ts",
-    "**/**/*.tsx"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

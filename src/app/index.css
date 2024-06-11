@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-black hover:text-primary hover:underline hover:underline-offset-2 transition-colors
+  }
+  h1 {
+    @apply text-4xl font-bold
+  }
+  h2 {
+    @apply text-2xl font-bold
+  }
+  ul {
+    @apply list-disc pl-10 my-4
+  }
+  ol {
+    @apply list-decimal pl-10 my-4
+  }
+}
